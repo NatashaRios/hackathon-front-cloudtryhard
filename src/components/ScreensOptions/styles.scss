@@ -1,0 +1,25 @@
+.containerScreens{
+  text-align: center;
+  height: 90vh;
+  margin-top: 3rem;
+  
+  .titleScreens{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  .divInfoScreens{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    .imgScreen{
+      width: 45rem;
+    }
+    .textScreen{
+      width: 15rem;
+      line-height: 1.5rem;
+      margin-right: 8rem;
+    }
+  }
+}

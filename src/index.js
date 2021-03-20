@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Home from './pages/Home';
+import AllGames from './pages/AllGames';
+import Game from './pages/Game';
+import Subscribe from './pages/Subscribe';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Route exact path='/' component={Home}/>
+    <Route exact path='/Games' component={AllGames} />
+    <Route exact path='/Game/:game' component={Game} />
+    <Route exact path='/Subscribe' component={Subscribe} />
+  </Router>,
   document.getElementById('root')
 );
 

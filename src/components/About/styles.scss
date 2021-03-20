@@ -1,0 +1,42 @@
+.containerAbout{
+  height: 100vh;
+  background-image: url('https://i.postimg.cc/sgj7KYYx/fondoabout-removebg.png');
+  background-color: rgba(0,0,0,0.8);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  &::before{
+    content:'';
+	  position: absolute;
+    top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .titleAbout{
+    position: relative;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 2em;
+  }
+  .explicationAbout{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+  }
+  .textAbout{
+    position: relative;
+    font-size: 1em;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+  }
+}

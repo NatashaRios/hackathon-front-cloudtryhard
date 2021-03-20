@@ -1,0 +1,27 @@
+.containerHeader{
+  background-color: rgba(202, 8, 8, 0.3);
+  height: 3rem;
+  min-width: 100%;
+  font-weight: bold;
+  position: fixed;
+  z-index: 1;
+
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    
+    .divName{
+      .name{
+      }
+    }
+    .divItems{
+      .itemsHeader{
+        display: flex;
+        .itemHeader{
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
