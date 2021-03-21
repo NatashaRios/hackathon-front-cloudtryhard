@@ -1,0 +1,20 @@
+@import '../../styles/functions';
+@import '../../styles/variables';
+
+.containerFAQ{
+  @include text;
+  margin: 2rem;
+  padding-bottom: 1rem;;
+  border-bottom: 1px solid $textColor;
+  .containerQuestion{
+    display: flex;
+    justify-content: space-between;
+    .question{
+      font-weight: bold;
+    }
+
+  }
+  .answer{
+   line-height: 1.3rem;
+  }
+}

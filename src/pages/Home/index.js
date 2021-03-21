@@ -5,6 +5,7 @@ import About from '../../components/About';
 import ScreensOptions from '../../components/ScreensOptions';
 import ShowGames from '../../components/ShowGames';
 import Cards from '../../components/Cards';
+import FAQs from '../../components/FAQs';
 
 const Home = () => {
   return(
@@ -24,6 +25,9 @@ const Home = () => {
       <ShowGames />
       <Cards 
         title='Get started with game channels'
+      />
+      <FAQs 
+        title='Frequently asked questions'
       />
     </>
   );
