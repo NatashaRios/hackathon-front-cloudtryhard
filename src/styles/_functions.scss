@@ -10,4 +10,14 @@
 @mixin text(){
   color: $textColor;
   font-size: 1em;
-}
+};
+
+@mixin message($color){
+  font-weight: bold;
+  height: 3rem;
+  width: 20rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+  border-radius: 10px;
+  background-color: $color;
+};
