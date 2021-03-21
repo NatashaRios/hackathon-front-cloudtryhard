@@ -17,10 +17,22 @@ const SignUp = ({ title, badMessage, messageOk}) => {
     setInputs({...inputs, [name]: value});
   };
   
-  const handleButton = () => {
+  const handleButton = async() => {
     if(errors == 0){
       setShowMessage(false);
-      setShowMessageOk(true); 
+      setShowMessageOk(true);
+      
+      const request = {
+        method: 'POST',
+        body: JSON.stringify({'name': 'test4', 'price': 100, 'unit': 1, 'img': 'test'}),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include'
+      };
+      const subscribe = await fetch('https://tryhard-cloud-api.herokuapp.com/payment/new', request);
+      const subscribeJson = await subscribe.json();
+      console.log(subscribeJson)
     }else{
       setShowMessage(true);
       setShowMessageOk(false);

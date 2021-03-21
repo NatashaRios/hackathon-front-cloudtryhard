@@ -8,6 +8,8 @@ import Cards from '../../components/Cards';
 import FAQs from '../../components/FAQs';
 import Footer from '../../components/Footer';
 
+import Zoom from 'react-reveal/Zoom';
+
 const Home = () => {
   return(
     <>
@@ -17,19 +19,27 @@ const Home = () => {
         subtitle='What it is?'
         text='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
       /> 
+      <Zoom>
       <ScreensOptions 
         title='Game on your favorite screens'
         img='https://i.postimg.cc/gknHPqw7/allscreen.png'
         alt='Screens'
         text='Available on Windows PC, Mac, and web apps for iPhone, iPad and Android phones.'
       />
-      <ShowGames />
-      <Cards 
-        title='Get started with game channels'
-      />
-      <FAQs 
-        title='Frequently asked questions'
-      />
+      </Zoom>
+      <Zoom>
+        <ShowGames />
+      </Zoom>
+      <Zoom>
+        <Cards 
+          title='Get started with game channels'
+        />
+      </Zoom>
+      <Zoom>
+        <FAQs 
+          title='Frequently asked questions'
+        />
+      </Zoom>
       <Footer />
     </>
   );
