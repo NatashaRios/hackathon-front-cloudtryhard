@@ -7,9 +7,9 @@ const FAQs = ({ title }) => {
     <>
       <h3 className='titleFaqs'>{title}</h3>
       <div className='containerAllFaq'>
-        {questions.map(question => {
+        {questions.map((question, key) => {
           return(
-            <FAQ question={question.question} answer={question.answer} />
+            <FAQ question={question.question} answer={question.answer} key={key} />
           )
         })}
       </div>

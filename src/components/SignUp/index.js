@@ -22,17 +22,8 @@ const SignUp = ({ title, badMessage, messageOk}) => {
       setShowMessage(false);
       setShowMessageOk(true);
       
-      const request = {
-        method: 'POST',
-        body: JSON.stringify({'name': 'test4', 'price': 100, 'unit': 1, 'img': 'test'}),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        credentials: 'include'
-      };
-      const subscribe = await fetch('https://tryhard-cloud-api.herokuapp.com/payment/new', request);
-      const subscribeJson = await subscribe.json();
-      console.log(subscribeJson)
+      const url = 'https://www.mercadopago.com.ar/checkout/v1/payment/redirect/4823323c-697e-42dd-ac8b-e5492b0a5e48/payment-option-form/?preference-id=130798191-f2720a87-3366-4a93-b9ef-666defacf1ea&p=da713da1f41d6923a66f3b950d781b97#/';
+      window.open(url)
     }else{
       setShowMessage(true);
       setShowMessageOk(false);
