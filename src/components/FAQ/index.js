@@ -11,8 +11,6 @@ const FAQ = ({ question, answer }) => {
       setShowAnswer(false)
     }
   }
-
-  console.log(showAnswer)
   return(
     <div className='containerFAQ'>
       <div className='containerQuestion' onClick={handleClick}>
