@@ -1,16 +1,20 @@
 @import '../../styles/functions';
 
-.containerCards{
+.containerCards {
   text-align: center;
   margin-top: 2rem;
 
-  .titleCards{
+  .titleCards {
     @include title;
     margin-bottom: 2rem;
   }
 
-  .containerCard{
+  .containerCard {
     display: flex;
     justify-content: center;
+    @include mobile() {
+      flex-direction: column;
+      margin-left: -3rem;
+    }
   }
 }

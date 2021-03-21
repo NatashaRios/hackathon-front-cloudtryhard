@@ -11,34 +11,30 @@ import Footer from '../../components/Footer';
 import Zoom from 'react-reveal/Zoom';
 
 const Home = () => {
-  return(
+  return (
     <>
       <Header />
-      <About 
+      <About
         title='Play with Tryhard Cloud'
         subtitle='What it is?'
-        text='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-      /> 
-      <Zoom>
-      <ScreensOptions 
-        title='Game on your favorite screens'
-        img='https://i.postimg.cc/gknHPqw7/allscreen.png'
-        alt='Screens'
-        text='Available on Windows PC, Mac, and web apps for iPhone, iPad and Android phones.'
+        text='Cloud Tryhard is a video game platform that allows you to enjoy games instantly on the compatible screens you already have. Stream them directly to your favorite compatible devices. In addition, you can access games from anywhere on the Internet, without waiting for them to be installed, downloaded or updated.'
       />
+      <Zoom>
+        <ScreensOptions
+          title='Game on your favorite screens'
+          img='https://i.postimg.cc/gknHPqw7/allscreen.png'
+          alt='Screens'
+          text='Available on Windows PC, Mac, and web apps for iPhone, iPad and Android phones.'
+        />
       </Zoom>
       <Zoom>
         <ShowGames />
       </Zoom>
       <Zoom>
-        <Cards 
-          title='Get started with game channels'
-        />
+        <Cards title='Get started with game channels' />
       </Zoom>
       <Zoom>
-        <FAQs 
-          title='Frequently asked questions'
-        />
+        <FAQs title='Frequently asked questions' />
       </Zoom>
       <Footer />
     </>

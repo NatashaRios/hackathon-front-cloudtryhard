@@ -2,12 +2,16 @@ import { Link } from 'react-router-dom';
 import './styles.scss';
 
 const Header = () => {
-  return(
+  return (
     <header className='containerHeader'>
       <nav className='navbar'>
-        <div className='divName'>
+        <div className='divLogo'>
           <Link to={'/'}>
-            <p className='name'>Cloud Tryhard</p>
+            <img
+              src='https://icongr.am/entypo/game-controller.svg?size=140&color=f7eaea'
+              className='cloudLogo'
+              alt='logo'
+            />
           </Link>
         </div>
         <div className='divItems'>
@@ -22,7 +26,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
-  )
+  );
 };
 
 export default Header;
