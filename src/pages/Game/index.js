@@ -1,8 +1,11 @@
+
 import './styles.scss';
 
 const Game = () => {
+  
   return(
     <>
+      
     </>
   );
 };

@@ -1,0 +1,24 @@
+@import '../../styles/functions';
+
+.titleGames{
+  @include title;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.containerAllGames{
+  display: flex;
+  justify-content: space-around;
+  .containerGames{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .titleCategories{
+    @include text;
+    font-weight: bold;
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $textColor;
+  }
+}

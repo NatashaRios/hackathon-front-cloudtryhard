@@ -1,0 +1,7 @@
+@import '../../styles/functions';
+
+.filterGames{
+  @include text;
+  margin: 2rem;
+  cursor: pointer;
+}
