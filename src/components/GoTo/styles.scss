@@ -1,16 +1,13 @@
 @import '../../styles/variables';
 
-.divGoGames{
+.divGoGames {
   display: flex;
   justify-content: center;
   align-items: center;
-  .goGames{
+  .goGames {
     color: $goColor;
     font-size: 1.5em;
     font-weight: 600;
     text-shadow: 0px 0px 5px $goColor;
-  }
-  .arrowGames{
-    
   }
 }

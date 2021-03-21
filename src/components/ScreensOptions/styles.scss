@@ -17,9 +17,14 @@
 
     .imgScreen {
       width: 45rem;
+      &:hover {
+        filter: saturate(250%);
+        transition: 1.3s all;
+      }
     }
     .textScreen {
       @include text;
+      font-size: 1.2em;
       width: 15rem;
       line-height: 1.5rem;
       margin-right: 8rem;
@@ -32,6 +37,8 @@
       }
       .textScreen {
         margin-right: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
       }
     }
   }

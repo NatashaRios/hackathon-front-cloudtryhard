@@ -1,23 +1,24 @@
 @import '../../styles/functions';
 @import '../../styles/variables';
 
-.containerGame{
+.containerGame {
   margin: 2rem;
   width: 12rem;
   height: 20rem;
   padding: 1rem;
   box-shadow: -1px -1px 25px 3px $goColor;
 
-  &:hover{
+  &:hover {
     transform: scale(1.1);
+    transition: 1s all;
   }
 
-  .imgGame{
+  .imgGame {
     width: 10rem;
     height: 12rem;
     object-fit: cover;
   }
-  .nameGame{
+  .nameGame {
     @include text;
     font-weight: bold;
     margin-top: 1rem;
