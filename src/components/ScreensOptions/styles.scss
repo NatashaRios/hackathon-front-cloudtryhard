@@ -3,8 +3,7 @@
 
 .containerScreens {
   text-align: center;
-  height: 60vh;
-  margin-top: 3rem;
+  margin: 3rem 0 12rem 0;
 
   .titleScreens {
     @include title;
@@ -36,9 +35,7 @@
         width: 20rem;
       }
       .textScreen {
-        margin-right: 1rem;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin: 2rem 0 2rem 0;
       }
     }
   }

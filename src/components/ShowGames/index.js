@@ -23,9 +23,14 @@ const ShowGames = ({ title }) => {
       <div className='divContainerCard'>
         <h3 className='titleFeaturedGames'>{title}</h3>
         <div className='divCardGame'>
-          {cardGame.map((game) => {
+          {cardGame.map((game, key) => {
             return (
-              <CardGame id={game._id} name={game.name} image={game.image} />
+              <CardGame
+                id={game._id}
+                name={game.name}
+                image={game.image}
+                key={key}
+              />
             );
           })}
         </div>

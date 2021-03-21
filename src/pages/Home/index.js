@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <Header />
       <About
-        title='Play with Tryhard Cloud'
+        title='Play with Cloud Tryhard'
         subtitle='What it is?'
         text='Cloud Tryhard is a video game platform that allows you to enjoy games instantly on the compatible screens you already have. Stream them directly to your favorite compatible devices. In addition, you can access games from anywhere on the Internet, without waiting for them to be installed, downloaded or updated.'
       />

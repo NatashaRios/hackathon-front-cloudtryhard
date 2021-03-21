@@ -1,11 +1,11 @@
 @import '../../styles/functions';
 
-.titleFaqs{
+.titleFaqs {
   @include title;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 12rem;
 }
-.containerAllFaq{
+.containerAllFaq {
   width: 80%;
   margin: 3rem auto;
 }

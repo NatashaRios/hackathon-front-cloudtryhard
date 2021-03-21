@@ -57,6 +57,7 @@
     }
     @include mobile() {
       font-size: 1.3em;
+      margin: 1rem 0 3rem 0;
       .animate {
         width: 100%;
       }
