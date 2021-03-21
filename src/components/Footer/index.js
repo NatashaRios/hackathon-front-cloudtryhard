@@ -4,7 +4,7 @@ const Footer = () => {
   return(
     <footer className='footer'>
       <div className='authors'>
-       <p>Make with ♡ by Kevin Leguizamon & Natasha Rios</p>
+       <p>Made with ♡ by Kevin Leguizamon & Natasha Rios</p>
       </div>
       <div>
         <p className='repo'>Repositorio Frontend: <a className='link' href='https://github.com/NatashaRios/hackathon-front-tryhardcloud'>Cloud Tryhard Frontend</a></p>

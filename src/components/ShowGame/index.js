@@ -1,4 +1,4 @@
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/youtube'
 import GoTo from '../GoTo';
 import './styles.scss';
 
@@ -12,8 +12,9 @@ const ShowGame = ({name, image, description, trailer, id }) => {
         <div className='contentTrailer'>
           <p className='titleTrailer'>Trailer game</p>
           <ReactPlayer 
-            className='trailer'
             url={trailer}
+            width='100%'
+            height='100%'
           />
         </div>
         <div className='divPlayGame'>

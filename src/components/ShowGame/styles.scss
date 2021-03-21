@@ -6,8 +6,16 @@
   .titleShowGame{
     @include title;
     margin-bottom: 2rem;
+
+    @include mobile(){
+      font-size: 1.5em;
+    }
   }
-  .imgShowGame{}
+  .imgShowGame{
+    @include mobile(){
+      width: 15rem;
+    }
+  }
   .desShowGame{
     @include text;
     width: 80%;
@@ -19,8 +27,19 @@
     justify-content: space-around;
     align-items: center;
 
+    @include mobile(){
+      flex-direction: column;
+    }
+
     .contentTrailer{
       margin-bottom: 2rem;
+      width: 35rem;
+      height: 20rem;
+
+      @include mobile(){
+        width: 20rem;
+        height: 10rem; 
+      }
       .titleTrailer{
         @include text;
         font-weight: bold;
@@ -30,6 +49,11 @@
     }   
     .divPlayGame{
       margin-right: 10rem;
+
+      @include mobile(){
+        margin-right: 0;
+        margin-top: 4rem;
+      }
     }
 
   }
