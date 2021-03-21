@@ -14,7 +14,6 @@ const AllGames = () => {
 
   const handleClick = async(e) => {
     setSelectFilter(e.target.innerText)
-    getGames()
   };
   
   useEffect(() => {
