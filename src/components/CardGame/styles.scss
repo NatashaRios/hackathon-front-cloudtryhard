@@ -4,8 +4,13 @@
 .containerGame{
   margin: 2rem;
   width: 12rem;
+  height: 20rem;
   padding: 1rem;
   box-shadow: -1px -1px 25px 3px $goColor;
+
+  &:hover{
+    transform: scale(1.1);
+  }
 
   .imgGame{
     width: 10rem;

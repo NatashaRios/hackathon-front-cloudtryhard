@@ -11,6 +11,10 @@
   padding: 3rem;
   box-shadow: -1px -1px 50px 5px $goColor;
   
+  &:hover{
+    transform: scale(1.1);
+  }
+  
   .titleCard{
     @include title;
     margin-bottom: 2rem;
