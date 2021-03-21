@@ -9,7 +9,7 @@
   background-color: rgba(110, 108, 108, 0.2);
   border-radius: 15px;
   padding: 3rem;
-  box-shadow: -1px -1px 50px 5px rgba(80,79,79,0.81);
+  box-shadow: -1px -1px 50px 5px $goColor;
   
   .titleCard{
     @include title;

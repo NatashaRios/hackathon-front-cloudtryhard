@@ -12,8 +12,9 @@ const AllGames = () => {
   const [allGames, setAllGames] = useState([]);
   const [selectFilter, setSelectFilter] = useState('All')
 
-  const handleClick = (e) => {
+  const handleClick = async(e) => {
     setSelectFilter(e.target.innerText)
+    getGames()
   };
   
   useEffect(() => {
@@ -32,7 +33,7 @@ const AllGames = () => {
       setAllGames(gamesJson);
     }
   };
-  
+  console.log(allGames)
   return(
     <>
       <Header />
