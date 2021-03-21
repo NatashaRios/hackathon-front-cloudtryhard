@@ -7,7 +7,7 @@ const Header = () => {
       <nav className='navbar'>
         <div className='divName'>
           <Link to={'/'}>
-            <p className='name'>Tryhard Cloud</p>
+            <p className='name'>Cloud Tryhard</p>
           </Link>
         </div>
         <div className='divItems'>

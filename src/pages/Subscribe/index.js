@@ -2,6 +2,7 @@ import './styles.scss';
 
 import Header from '../../components/Header';
 import SignUp from '../../components/SignUp';
+import Footer from '../../components/Footer';
 
 const Subscribe = () => {
   return(
@@ -12,6 +13,7 @@ const Subscribe = () => {
         badMessage='Missing fields!'
         messageOk='Successfully subscribed!'
       />
+      <Footer />
     </>
   )
 };

@@ -6,6 +6,7 @@ import ScreensOptions from '../../components/ScreensOptions';
 import ShowGames from '../../components/ShowGames';
 import Cards from '../../components/Cards';
 import FAQs from '../../components/FAQs';
+import Footer from '../../components/Footer';
 
 const Home = () => {
   return(
@@ -29,6 +30,7 @@ const Home = () => {
       <FAQs 
         title='Frequently asked questions'
       />
+      <Footer />
     </>
   );
 };

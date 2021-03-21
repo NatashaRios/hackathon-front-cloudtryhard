@@ -1,0 +1,24 @@
+@import '../../styles/functions';
+@import '../../styles/variables';
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(117, 11, 11, 0.7);
+  width: 100%;
+  font-size: 0.8em;
+
+  .authors{
+    @include text;
+    margin-top: 0.5rem;
+  }
+  .repo{
+    @include text;
+
+    .link{
+      font-weight: bold;
+    }
+  }
+}
