@@ -28,7 +28,7 @@ const Home = () => {
         />
       </Zoom>
       <Zoom>
-        <ShowGames />
+        <ShowGames title='Featured Games ' />
       </Zoom>
       <Zoom>
         <Cards title='Get started with game channels' />

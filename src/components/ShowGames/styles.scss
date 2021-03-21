@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+@import '../../styles/functions';
+
+.divContainerCard {
+  text-align: center;
+  margin-top: 3rem;
+}
+.divCardGame {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.titleFeaturedGames {
+  @include title;
+  margin-bottom: 3rem;
+}
