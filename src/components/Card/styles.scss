@@ -1,7 +1,7 @@
 @import '../../styles/functions';
 @import '../../styles/variables';
 
-.containerInfoCard{
+.containerInfoCard {
   display: flex;
   flex-direction: column;
   width: 20rem;
@@ -10,25 +10,25 @@
   border-radius: 15px;
   padding: 3rem;
   box-shadow: -1px -1px 50px 5px $goColor;
-  
-  &:hover{
+
+  &:hover {
     transform: scale(1.1);
   }
-  
-  .titleCard{
+
+  .titleCard {
     @include title;
     margin-bottom: 2rem;
     line-height: 1.8rem;
   }
-  .priceCard{
+  .priceCard {
     font-size: 1.3em;
     color: $textColor;
     margin-bottom: 2rem;
     font-weight: bold;
     text-shadow: 0px 0px 2px $titleColor;
   }
-  .liItemsCard{
-    .itemCard{
+  .liItemsCard {
+    .itemCard {
       @include text;
       margin-bottom: 1rem;
       line-height: 1.2rem;

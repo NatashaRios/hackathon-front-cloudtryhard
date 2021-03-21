@@ -1,28 +1,38 @@
 @import '../../styles/variables';
 @import '../../styles/functions';
 
-.containerScreens{
+.containerScreens {
   text-align: center;
   height: 90vh;
   margin-top: 3rem;
-  
-  .titleScreens{
+
+  .titleScreens {
     @include title;
     margin-bottom: 3rem;
   }
-  .divInfoScreens{
+  .divInfoScreens {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
-    .imgScreen{
+
+    .imgScreen {
       width: 45rem;
     }
-    .textScreen{
+    .textScreen {
       @include text;
       width: 15rem;
       line-height: 1.5rem;
       margin-right: 8rem;
+    }
+    @include mobile() {
+      text-align: center;
+      flex-direction: column;
+      .imgScreen {
+        width: 20rem;
+      }
+      .textScreen {
+        margin-right: 1rem;
+      }
     }
   }
 }

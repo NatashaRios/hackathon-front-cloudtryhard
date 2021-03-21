@@ -1,18 +1,18 @@
 @import './variables';
 
-@mixin title(){
+@mixin title() {
   color: $titleColor;
-  font-size: 1.5em;
+  font-size: 1.9em;
   font-weight: bold;
   text-shadow: 0px 0px 4px $textColor;
-};
+}
 
-@mixin text(){
+@mixin text() {
   color: $textColor;
   font-size: 1em;
-};
+}
 
-@mixin message($color){
+@mixin message($color) {
   font-weight: bold;
   height: 3rem;
   width: 20rem;
@@ -20,4 +20,10 @@
   padding-top: 1rem;
   border-radius: 10px;
   background-color: $color;
-};
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
