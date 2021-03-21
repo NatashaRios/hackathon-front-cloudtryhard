@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import AllGames from './pages/AllGames';
 import Game from './pages/Game';
+import PlayGame from './pages/PlayGame';
 import Subscribe from './pages/Subscribe';
 import reportWebVitals from './reportWebVitals';
 
@@ -13,6 +14,7 @@ ReactDOM.render(
     <Route exact path='/' component={Home}/>
     <Route exact path='/Games' component={AllGames} />
     <Route exact path='/Game/:game' component={Game} />
+    <Route exact path='/PlayGame/:game' component={PlayGame} />
     <Route exact path='/Subscribe' component={Subscribe} />
   </Router>,
   document.getElementById('root')

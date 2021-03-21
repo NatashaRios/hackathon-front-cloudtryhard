@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-const GoTo = ({ goGames, arrow, alt, games, subscribe }) => {
+const GoTo = ({ goGames, arrow, alt, games, subscribe, playgame, id }) => {
   return(
     <>
       {games && (
@@ -19,6 +19,14 @@ const GoTo = ({ goGames, arrow, alt, games, subscribe }) => {
             <img className='arrowGames' src={arrow} alt={alt} />
           </div>
         </Link>
+      )}
+      {playgame && (
+         <Link to={`/PlayGame/${id}`}>
+         <div className='divGoGames'>
+           <p className='goGames'>{goGames}</p>
+           <img className='arrowGames' src={arrow} alt={alt} />
+         </div>
+       </Link>
       )}
     </>
   );

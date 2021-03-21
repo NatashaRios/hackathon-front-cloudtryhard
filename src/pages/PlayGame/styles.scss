@@ -1,0 +1,7 @@
+@import '../../styles/functions';
+
+.playGameText{
+  @include text;
+  text-align: center;
+  margin-top: 5rem;
+}

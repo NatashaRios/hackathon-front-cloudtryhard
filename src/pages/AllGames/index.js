@@ -29,11 +29,10 @@ const AllGames = () => {
     }else{
       const games = await fetch(`https://tryhard-cloud-api.herokuapp.com/games/category/${selectFilter}`);
       const gamesJson = await games.json();
-      
       setAllGames(gamesJson);
     }
   };
-
+  
   return(
     <>
       <Header />

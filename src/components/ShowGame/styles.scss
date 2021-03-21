@@ -1,0 +1,36 @@
+@import '../../styles/functions';
+
+.containerShowGame{
+  margin-top: -3rem;
+  text-align: center;
+  .titleShowGame{
+    @include title;
+    margin-bottom: 2rem;
+  }
+  .imgShowGame{}
+  .desShowGame{
+    @include text;
+    width: 80%;
+    margin: 2rem auto;
+    line-height: 1.5rem;
+  }
+  .trailerPlay{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contentTrailer{
+      margin-bottom: 2rem;
+      .titleTrailer{
+        @include text;
+        font-weight: bold;
+        margin: 2rem 0 2rem 2rem;
+        text-align: start;
+      }
+    }   
+    .divPlayGame{
+      margin-right: 10rem;
+    }
+
+  }
+}
