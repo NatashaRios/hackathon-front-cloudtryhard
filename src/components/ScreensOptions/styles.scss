@@ -1,11 +1,13 @@
+@import '../../styles/variables';
+@import '../../styles/functions';
+
 .containerScreens{
   text-align: center;
   height: 90vh;
   margin-top: 3rem;
   
   .titleScreens{
-    font-size: 1.5em;
-    font-weight: bold;
+    @include title;
     margin-bottom: 3rem;
   }
   .divInfoScreens{
@@ -17,6 +19,7 @@
       width: 45rem;
     }
     .textScreen{
+      @include text;
       width: 15rem;
       line-height: 1.5rem;
       margin-right: 8rem;

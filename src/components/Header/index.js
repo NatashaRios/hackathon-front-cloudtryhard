@@ -7,18 +7,18 @@ const Header = () => {
       <nav className='navbar'>
         <div className='divName'>
           <Link to={'/'}>
-            <p className='name'>Jueguitos</p>
+            <p className='name'>Tryhard Cloud</p>
           </Link>
         </div>
         <div className='divItems'>
-          <li className='itemsHeader'>
+          <ul className='itemsHeader'>
             <Link to={'/Games'}>
-              <ul className='itemHeader'> Juegos </ul>
+              <li className='itemHeader'> Games </li>
             </Link>
             <Link to={'/Suscribe'}>
-              <ul className='itemHeader'> Suscribirse </ul>
+              <li className='itemHeader'> Subscribe </li>
             </Link>
-          </li>
+          </ul>
         </div>
       </nav>
     </header>

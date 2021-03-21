@@ -1,10 +1,13 @@
+@import '../../styles/variables';
+
 .containerHeader{
-  background-color: rgba(202, 8, 8, 0.3);
+  background-color: rgba(117, 11, 11, 0.7);
   height: 3rem;
   min-width: 100%;
   font-weight: bold;
   position: fixed;
   z-index: 1;
+  color: $titleColor;
 
   .navbar{
     display: flex;
@@ -13,6 +16,10 @@
     
     .divName{
       .name{
+        text-shadow: 0px 0px 3px $textColor;
+        font-size: 1.2em;
+        font-weight: 800;
+        margin-top: -0.2rem;
       }
     }
     .divItems{
@@ -20,6 +27,7 @@
         display: flex;
         .itemHeader{
           margin-right: 2rem;
+          font-size: 1em;
         }
       }
     }

@@ -1,0 +1,17 @@
+@import '../../styles/functions';
+
+.containerCards{
+  text-align: center;
+  height: 100vh;
+  margin-top: 2rem;
+
+  .titleCards{
+    @include title;
+    margin-bottom: 2rem;
+  }
+
+  .containerCard{
+    display: flex;
+    justify-content: center;
+  }
+}
