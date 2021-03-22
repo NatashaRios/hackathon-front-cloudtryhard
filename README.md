@@ -2,4 +2,4 @@
 
 ## Github Backend
 
-https://github.com/NatashaRios/hackathon-front-tryhardcloud
+https://github.com/kleguizamon/hackathon-back-cloudtryhard
